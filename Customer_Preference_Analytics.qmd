@@ -1,0 +1,488 @@
+---
+title: "Customer Preference Analytics"
+author: "Anant Patel - 0866771"
+format: pdf
+bibliography: customer_references.bib
+---
+
+Over the past decade, there has been a transformation in global retail with online sales contributing 20% of total global retail sales. According to @statista2023global the online sales for the fashion market were valued at \$759.5 billion in 2022 and are expected to increase to \$1.2 trillion by 2027 showing a significant shift of consumers towards digital platforms and changes in the purchasing behavior of consumers.  On one hand, new clothing trends are constantly emerging, largely influenced by online influencers and popular film stars. These trends are quickly spread to people through various online social media platforms, movies, and advertisements @giri2019customer. Social Media, in particular, has made fashion more accessible by providing users with instant exposure to the latest clothing styles, while targeted advertisements further drive consumer interest.@cleofasbrand has also quoted that fashion giants like H&M and Zara have very high influence over the customers as they can launch a new fashion trend that will be widely accepted by consumers around the globe. This evolution has not only diversified the fashion industry but also shown new ways for customers to engage with the purchase of clothing and accessories.@glinska2017customer analyzed the Polish data and also highlighted that there has been a surge of 11.6% in online shoppers from 2012 to 2016.  Not only this, the variety of clothing, and convenience of purchasing have broadly influenced customers to shift from offline retail market to online platforms.
+
+On the other hand, this shift has also occurred due to recent pandemic situations around the globe. After COVID-19, many behavioral changes occurred in individuals that impacted how they purchase goods. During the COVID period, the fashion industry was one of the industries that were severely affected by the lockdown which made consumers shift towards e-commerce platforms @cleofasbrand. Additionally, @wibowo2024exploring has also mentioned how a famous fashion industry, Santoon, in Indonesia, faced problems with e-commerce despite being a market leader in the country.
+
+These shifts need to be understood to help new online businesses survive in this competitive market. Customer preferences can be identified by analyzing past data, which helps develop effective strategies for new companies. Analyzing past data is a crucial step for understanding customer needs, purchase patterns, and much more. The customer needs a more personalized service that can be carried out by analyzing past data and finding meaningful insights from the data @ giri2019customer. According to @ giri2019customer, the main strategy of the fashion industry should be expanding its customer base and finding hidden insights that allow businesses to retain their customers. 
+
+## Factors Affecting Customer Preference
+
+The purchasing patterns of the customers are influenced by many factors. These factors vary from offline to online retail. First of all, detailed product information has more influence on customer purchase.@wibowo2024exploring identified that quality and size are the primary factors influencing customers’ preferences for fashion products. Also, highlighted that product information is crucial for e-commerce platforms, which was missing on Santoon’s social media platform. The author identified that customers view products at offline stores but purchase them online this suggests that product information needs to be detailed.
+
+Secondly, past customer reviews are also important as they can leveraged to improve products and services. Not only this,@wibowo2024exploring described that customer reviews play a crucial role in enhancing the online product. Moreover, the writer found that online exclusive offer such as free shipping and limited-time discounts affects the customer preference for purchasing online. In addition, secure payment options, return policies, and efficient delivery improve the recency of customers.
+
+Furthermore,@cleofasbrand found in the study that brand was the most important factor contributing 43% among all the factors followed by clothing function, and place of purchase. @kod1customer also quoted that across all the respondents brand name, lower price, and shopping from home were the motivators for the online shoppers.
+
+On the one hand,@kod1customer’s research on the Polish market found that age does not diversify customers’ decisions despite having significant results of the Mann-Whitney U test for different age groups.  On the other hand,@glinska2017customer also researched online retail in Poland and found that there are significant differences between age groups’ purchasing patterns. The author found that individuals aged less than 25 saw online shopping as taking part in loyalty programs and spending time whereas the motives of people who had an age above 25 were making purchases as around-the-clock availability, more information about products, and possibilities to find special products. Additionally, @delimarta2021customer found that brand image, price, quality, and design are positively related to the customer’s willingness to purchase the product.   
+
+## The Role of Data Analytics in Understanding and Responding to Consumer Preferences:
+
+The role of a data analyst in general is to uncover hidden patterns, and trends, and generate insights that help organizations make informed decisions. This can be carried out with the help of various tools to visualize and analyze the data. The duty of data analysts is also crucial for identifying customer preferences. According to @giri2019customer, analytics carried out to find the hidden patterns in customer purchases is called Customer Analytics. The Company’s business goal defines how to incorporate it into business intelligence. The writer also identified the sources of the data extraction. Firstly, website traffic contains data such as page views, click-through rates, and time spent on the website. Moreover, purchase history shows records of purchases which can be used to identify the average order value, preferred brands, and categories. Additionally, from the customer feedback insights like product quality, customer service, and overall satisfaction can be derived. These customers can be clustered into separate groups [@sulianta2024revealing] using the clustering technique of k-mean clustering.  The author clustered customers into 4 clusters based on price, quality, and brand. Moreover, the cluster also has customers who buy costly or premium products. @okofu2024pilot carried out a sentiment-based analysis for identifying customer behavior and based on the Bayesian Network further derived parameters of interest such as Usefulness, Usage Ease, Purchase Intension, User-trust.
+
+## Benefits of Data Analytics
+
+The insights can be utilized by fashion retailers to enhance their customer service and marketing. @glinska2017customer concluded the research and identified age-dependent differences in consumer behavior which can be used in marketing strategies to target age groups with personalized offers and discounts on products, recommendations, and content that has customer-specific interest. 
+
+@cleofasbrand also identified that purchases are driven by purchases for everyday use and recreation without immediate purchase intention. This understanding helps inform product design assortment planning, and inventory management, ensuring that businesses offer products that meet customer demands. With the help of data analysis, we can enhance the customer experience,  improve website usability, and improve the purchasing process which leads to customer satisfaction [@okofu2024pilot].
+
+## Methods used
+
+1.	**Thematic analysis**: It can find recurring patterns and generate a theme [@wibowo2024exploring]. This method minimally organizes and describes the data set in detail. @wibowo2024exploring used thematic analysis to find recurring patterns related to customer preference of purchasing fashion items online versus offline.
+
+2.	**Triangulation**: According to @wibowo2024exploring, triangulation is used to validate research findings by comparing data from different sources. Suppose one source triangulated data from customer interviews, company owner observations, and existing research on customer decision-making in the fashion industry.
+
+3.	**Conjoint Analysis**: This method is used to find the relative importance of different product attributes in customer purchase decisions. @cleofasbrand and @suzianti2015customer used the conjoint analysis for Customer preference analysis.
+
+4.	**CRISP-DM (Cross-Industry Standard Process for Data Mining)**: @sulianta2024revealing used this methodology which has stages like data collection, cleaning, analysis, and interpretation. These phases produce specific outputs that lead to the next steps in the project. 
+
+5.	**K-Means Clustering**: It is an unsupervised machine learning algorithm used to cluster or group the data points into clusters based on their similarity. This method can be used to segment customers based on shared characteristics such as price sensitivity or brand preference [@sulianta2024revealing].
+
+6.	**Elbow method**: The elbow method is used in conjunction with K-Means Clustering to identify the optimal number of clusters. @sulianta2024revealing used the elbow method to identify the number of clusters before passing it into the K-Means Clustering algorithm.
+
+These are the common methods used by the researchers to conduct Customer Preference Analysis.
+
+Objective: This study aims to explore the ever-changing market of fashion retail while focusing specifically on factors influencing customer preferences for online e-commerce fashion platforms and how this analysis can be useful in developing business strategies. 
+
+::: {.callout-note title="Research Objective"}
+
+This study aims to explore the ever-changing market of fashion retail while focusing specifically on factors influencing customer preferences for online e-commerce fashion platforms and how this analysis can be useful in developing business strategies.
+:::
+
+> **Research Objective:**
+> This study aims to explore the ever-changing market of fashion retail while focusing specifically on factors influencing customer preferences for online e-commerce fashion platforms and how this analysis can be useful in developing business strategies
+
+# Data description
+
+The aim of study was to identify the customer preferences based on behaviorial and demographic traits such as age, gender, recency, prefered delivery method, and transaction amount.
+
+| Feature Name                     | Description                                                            |
+|-----------------------------------|------------------------------------------------------------------------|
+| `Customer.ID`                     | Unique identifier for each customer.                                   |
+| `Age`                             | Age of the customer.                                                   |
+| `Gender`                          | Gender of the customer.                                                |
+| `Item.Purchased`                  | Item that was purchased by the customer.                               |
+| `Category`                        | Category of the purchased item.                                        |
+| `Purchase.Amount..USD.`           | Purchase amount in USD.                                                |
+| `Location`                        | Geographical location of the customer.                                 |
+| `Size`                            | Size of the purchased item.                                            |
+| `Color`                           | Color of the purchased item.                                           |
+| `Season`                          | Season during which the item was purchased.                            |
+| `Review.Rating`                   | Customer's rating for the item.                                        |
+| `Subscription.Status`             | Whether the customer has a subscription (e.g., 'Subscribed' or 'Not Subscribed'). |
+| `Payment.Method`                  | Payment method used for the purchase.                                  |
+| `Shipping.Type`                   | Type of shipping used (e.g., standard, expedited).                     |
+| `Discount.Applied`                | Whether a discount was applied during the purchase.                    |
+| `Promo.Code.Used`                 | Whether a promo code was used for the purchase.                        |
+| `Previous.Purchases`              | Number of previous purchases made by the customer.                     |
+| `Preferred.Payment.Method`        | Customer's preferred method of payment.                                |
+| `Frequency.of.Purchases`          | Frequency with which the customer makes purchases.                     |
+| `Age.bin`                         | Binned category for age (e.g., age group).                             |
+
+
+```{r}
+#| results: false
+#| warning: false
+
+library(dplyr)
+library(ggplot2)
+library(forcats)
+library(gt)
+library(gtExtras)
+library(rstatix)
+library(hrbrthemes)
+library(viridis)
+library(maps)
+library(chisq.posthoc.test)
+```
+
+
+# Data Preprocessing
+
+```{r}
+df <- read.csv("shopping_trends.csv")
+df_2 <- df
+for (i in names(df_2)){
+  if(class(df_2[[i]]) == "character"){
+    df_2[[i]] <- factor(df_2[[i]])
+    
+  }
+}
+str(df_2)
+class(df_2$Gender)
+
+names(df_2)
+
+df_2$Size <- factor(df_2$Size, levels=c("S","M","L","XL"), ordered = TRUE)
+```
+```{r}
+# Check null values
+colSums(is.na(df_2))
+```
+There are no NA values in the dataset.
+
+# Data Exploration
+```{r}
+barplot(table(df[["Gender"]]))
+```
+
+```{r}
+# for (i in names(df_2)){
+#   print(i)
+#   if(class(df_2[[i]]) == "factor"){
+#     # ggplot(table(df_2),aes(x=i,)) +
+#     #   geom_bar() + 
+#     #   coord
+#     barplot(table(df[[i]]),xlab=i,main = paste("Distribution of ",i))
+#   }
+#   else{
+#     # qqnorm(df[[i]],xlab = i, main = paste("Distribution of",i))
+#     # qqline(df[[i]],col="red")
+#     hist(df[[i]],xlab = i, main = paste("Distribution of",i))
+#     
+#   }
+# }
+```
+
+## Demographic analysis
+
+### Age
+```{r}
+# Binning the age in to two categories
+df_2$Age.bin <- ifelse(df_2$Age <= 25,"Under 25","Above 25")
+
+# Factorizing the column
+df_2$Age.bin <- factor(df_2$Age.bin)
+```
+
+```{r}
+#| message: false 
+#| warning: false 
+#| label: fig-frequency-of-purchase-by-age-group
+#| fig-cap: "Plots showing the frequency purchase in different age group"
+#| fig-subcap: 
+#|   - "Frequency of purchase for Age <= 25"
+#|   - "Frequency of purchase for Age > 25" 
+#| layout-ncol: 2
+#| fig-align: center
+
+
+# 1. Age 
+
+# 1.1 Frequency of Purchase
+
+# Plot to display the count of Customer under 25 and their Frequency of Purchase
+data.frame(table(df_2[df_2$Age.bin == "Under 25", "Frequency.of.Purchases"])) %>%
+  mutate(name = fct_reorder(Var1, desc(Freq))) %>%
+  ggplot(aes(x = name, y = Freq)) + 
+  geom_bar(stat = "identity") + 
+  labs( x = "Frequency of Purchases", y = "Count",) +
+  coord_flip()
+
+# Plot to display the count of Customer above 25 and their Frequency of Purchase
+data.frame(table(df_2[df_2$Age.bin == "Above 25", "Frequency.of.Purchases"])) %>%
+  mutate(name = fct_reorder(Var1, desc(Freq))) %>%
+  ggplot(aes(x = name, y = Freq)) + 
+  geom_bar(stat = "identity") + 
+  labs(x = "Frequency of Purchases", y = "Count") +
+  coord_flip()
+```
+
+
+```{r}
+# Chi square test of independence
+chisq.test(table(df_2$Age.bin,df_2$Frequency.of.Purchases))
+# There are not much significance between relation of Age and Frequency of Purchase
+```
+
+
+```{r}
+# 1.2 Promo codes
+age_promo_table <- data.frame(table(df_2$Age.bin,df_2$Promo.Code.Used)) 
+
+colnames(age_promo_table) <- c("Age.bin", "Promo.Code.Used", "Count")
+
+age_promo_table %>%
+  ggplot(aes(x = Age.bin, y = Promo.Code.Used, fill = Count)) +
+    geom_tile() +
+    scale_fill_viridis(discrete = FALSE) +
+    labs(title = "Heatmap for Age group and Promo code used",
+         x = "Age group", y = " Promo Code Used", fill = "Count") +
+    theme_minimal() + 
+  geom_text(aes(label = Count), color = "white", size = 6)
+
+age_promo_code <- table(df_2$Age.bin, df_2$Promo.Code.Used)
+chisq.test(age_promo_code)
+```
+
+
+```{r}
+# 1.3 Review Rating
+df_2 %>%
+  ggplot(aes(x=Age.bin, y = Review.Rating, fill = Age.bin)) +
+  geom_boxplot()
+
+# T test
+Age.grouping <- group_by(df_2,Age.bin)
+
+# Assumptions checking
+# Outlier checking
+identify_outliers(Age.grouping, Review.Rating)
+# Normality checking
+for (i in unique(df_2$Age.bin)){
+  # print(i)
+  qqnorm(df_2[df_2$Age.bin == i,"Review.Rating"])
+  qqline(df_2[df_2$Age.bin == i,"Review.Rating"],col = "red")
+  plot(density(df_2[df_2$Age.bin == i,"Review.Rating"]))
+  boxplot(df_2[df_2$Age.bin == i,"Review.Rating"])
+}
+shapiro_test(Age.grouping, Review.Rating)
+# Homogeniety of variance
+levene_test(df_2, Review.Rating ~ Age.bin)
+
+t_test(Review.Rating ~ Age.bin, data = df_2)
+
+cohens_d(df_2,Review.Rating ~ Age.bin, var.equal = FALSE)
+# p-value < 0.05, there is an effect but small one
+```
+```{r}
+# 1.4 Category
+
+age_category_table <- data.frame(table(df_2$Age.bin,df_2$Category)) 
+colnames(age_category_table) <- c("Age.bin", "Category", "Count")
+
+age_category_table %>%
+  ggplot(aes(x = Age.bin, y = Category, fill = Count)) +
+    geom_tile() +
+    scale_fill_viridis(discrete = FALSE) +
+    labs(title = "Heatmap for Age group and Promo code used",
+         x = "Age group", y = " Promo Code Used", fill = "Count") +
+    theme_minimal() + 
+  geom_text(aes(label = Count), color = "white", size = 6)
+
+age_promo_code <- table(df_2$Age.bin, df_2$Promo.Code.Used)
+chisq.test(age_promo_code)
+```
+```{r}
+# Preferred Purchase Method
+age_preferred_purhcase_method_table <- data.frame(table(df_2$Age.bin,df_2$Preferred.Payment.Method)) 
+colnames(age_preferred_purhcase_method_table) <- c("Age.bin", "Preferred.Payment.Method", "Count")
+
+age_preferred_purhcase_method_table %>%
+  ggplot(aes(x = Age.bin, y = Preferred.Payment.Method, fill = Count)) +
+    geom_tile() +
+    scale_fill_viridis(discrete = FALSE) +
+    labs(title = "Heatmap for Age group and Preferred Purchase Method",
+         x = "Age group", y = " Preferred Purchase Method", fill = "Count") +
+    theme_minimal() + 
+  geom_text(aes(label = Count), color = "white", size = 6)
+
+age_preferred_payment_method_code <- table(df_2$Age.bin, df_2$Preferred.Payment.Method)
+chisq.test(age_preferred_payment_method_code)
+```
+
+```{r}
+# 1.6 Shipping Type by Age
+age_shipping <- data.frame(table(df_2$Age.bin, df_2$Shipping.Type)) 
+colnames(age_shipping) <- c("Age", "Shipping_Type", "Count")
+
+# Bar plot for Age vs Shipping Type
+age_shipping %>%
+  ggplot(aes(fill = Age, y = Count, x = Shipping_Type)) + 
+  geom_bar(position = "dodge", stat = "identity") +
+  labs(title = "Shipping Type by Age", x = "Shipping Type", y = "Count")
+
+# Chi-square test for Age and Shipping Type relationship
+shipping_table_age <- table(df_2$Age, df_2$Shipping.Type)
+chisq.test(shipping_table_age)
+
+# No significance
+```
+### Gender
+```{r}
+#| message: false 
+#| warning: false 
+#| label: fig-frequency-of-purchase-by-gender-group
+#| fig-cap: "Plots showing the frequency purchase by gender group"
+#| fig-subcap: 
+#|   - "Frequency of purchase for Male customers"
+#|   - "Frequency of purchase for Female customers" 
+#| layout-ncol: 2
+#| fig-align: center
+
+# 2.1 Frequency of Purchase
+
+# Plot to display the count of Male customers and their Frequency of Purchase
+data.frame(table(df_2[df_2$Gender == "Male", "Frequency.of.Purchases"])) %>%
+  mutate(name = fct_reorder(Var1, desc(Freq))) %>%
+  ggplot(aes(x = name, y = Freq)) + 
+  geom_bar(stat = "identity") + 
+  labs(x = "Frequency of Purchases", y = "Count") +
+  coord_flip()
+
+# Plot to display the count of Female customers and their Frequency of Purchase
+data.frame(table(df_2[df_2$Gender == "Female", "Frequency.of.Purchases"])) %>%
+  mutate(name = fct_reorder(Var1, desc(Freq))) %>%
+  ggplot(aes(x = name, y = Freq)) + 
+  geom_bar(stat = "identity") + 
+  labs(x = "Frequency of Purchases", y = "Count") +
+  coord_flip()
+
+
+```
+
+
+```{r}
+# Chi square test of independence
+chisq.test(table(df_2$Gender, df_2$Frequency.of.Purchases))
+```
+
+
+```{r}
+```
+
+```{r}
+# 2.2 Promo Codes
+gender_promo_table <- data.frame(table(df_2$Gender, df_2$Promo.Code.Used)) 
+
+colnames(gender_promo_table) <- c("Gender", "Promo.Code.Used", "Count")
+
+gender_promo_table %>%
+  ggplot(aes(x = Gender, y = Promo.Code.Used, fill = Count)) +
+    geom_tile() +
+    scale_fill_viridis(discrete = FALSE) +
+    labs(title = "Heatmap for Gender and Promo Code Used",
+         x = "Gender", y = "Promo Code Used", fill = "Count") +
+    theme_minimal() + 
+    geom_text(aes(label = Count), color = "white", size = 6)
+
+gender_promo_code <- table(df_2$Gender, df_2$Promo.Code.Used)
+chisq.test(gender_promo_code)
+chisq.posthoc.test::chisq.posthoc.test(gender_promo_code)
+
+# gender have influence on promo code with Male being
+```
+```{r}
+# 2.3 Review Rating
+df_2 %>%
+  ggplot(aes(x = Gender, y = Review.Rating, fill = Gender)) +
+  geom_boxplot()
+
+# T test
+Gender.grouping <- group_by(df_2, Gender)
+
+# Assumptions checking
+# Outlier checking
+identify_outliers(Gender.grouping, Review.Rating)
+# Normality checking
+shapiro_test(Gender.grouping, Review.Rating)
+# Homogeneity of variance
+levene_test(df_2, Review.Rating ~ Gender)
+
+t_test(Review.Rating ~ Gender, data = df_2)
+
+cohens_d(df_2, Review.Rating ~ Gender, var.equal = FALSE)
+# p-value < 0.05, indicating there is an effect
+
+# No effect of Gender on reviews
+```
+```{r}
+# 2.4 Category
+gender_category_table <- data.frame(table(df_2$Gender, df_2$Category)) 
+colnames(gender_category_table) <- c("Gender", "Category", "Count")
+
+gender_category_table %>%
+  ggplot(aes(x = Gender, y = Category, fill = Count)) +
+    geom_tile() +
+    scale_fill_viridis(discrete = FALSE) +
+    labs(title = "Heatmap for Gender and Category",
+         x = "Gender", y = "Category", fill = "Count") +
+    theme_minimal() + 
+    geom_text(aes(label = Count), color = "white", size = 6)
+
+gender_category_code <- table(df_2$Gender, df_2$Category)
+chisq.test(gender_category_code)
+
+```
+```{r}
+# 2.5 Preferred Purchase Method
+gender_preferred_purchase_method_table <- data.frame(table(df_2$Gender, df_2$Preferred.Payment.Method)) 
+colnames(gender_preferred_purchase_method_table) <- c("Gender", "Preferred.Payment.Method", "Count")
+
+gender_preferred_purchase_method_table %>%
+  ggplot(aes(x = Gender, y = Preferred.Payment.Method, fill = Count)) +
+    geom_tile() +
+    # scale_fill_viridis(discrete = FALSE) +
+    labs(title = "Heatmap for Gender and Preferred Purchase Method",
+         x = "Gender", y = "Preferred Purchase Method", fill = "Count") +
+    theme_minimal() + 
+    geom_text(aes(label = Count), color = "white", size = 6)
+
+gender_preferred_payment_method_code <- table(df_2$Gender, df_2$Preferred.Payment.Method)
+chisq.test(gender_preferred_payment_method_code)
+
+```
+
+```{r}
+# 2.6 Shipping Type
+gender_shipping <- data.frame(table(df_2$Gender, df_2$Shipping.Type)) 
+colnames(gender_shipping) <- c("Gender","Shipping_Type","Count")
+
+gender_shipping %>%
+  ggplot(aes(fill = Gender, y = Count, x = Shipping_Type)) + 
+  geom_bar(position = "dodge", stat = "identity") +
+  coord_flip()
+
+shipping_table <- table(df_2$Gender,df_2$Shipping.Type)
+chisq.test(shipping_table)
+chisq.posthoc.test(shipping_table)
+
+# Free shipping is preferred by Females more than males
+```
+
+```{r}
+# Create a contingency table for Item Purchased and Category
+item_category_table <- table(df_2$Item.Purchased, df_2$Category)
+
+# Perform Chi-squared test
+item_category_test <- chisq.test(item_category_table)
+
+# Display Chi-squared test results
+print(item_category_test)
+
+View(chisq.posthoc.test(item_category_table))
+```
+```{r}
+# Frequency plot for size preference
+size_count <- table(df_2$Size)
+
+size_df <- size_count %>% data.frame() 
+colnames(size_df) <- c("size","count")
+
+size_df %>%
+  ggplot(aes(x = size, y = count, fill = size)) +
+  geom_bar(stat = "identity") 
+
+expected_distribution <- c(0.25,0.25,0.25,0.25)
+
+# Perform Chi-Square Goodness of Fit Test
+chisq.test(size_count, p = expected_distribution)
+
+# size_radar <- rbind(rep(2000,4),rep(0,4),data.frame(table(df_2$Size))$Freq)
+# colnames(size_radar) <- c("S","M","L","XL")
+# size_radar <- data.frame(size_radar)
+# radarchart(size_radar)
+```
+
+
+\newpage
+
+# Bibiliography
+
+:::{ref}
+:::
