@@ -47,46 +47,88 @@ The insights can be utilized by fashion retailers to enhance their customer serv
 
 These are the common methods used by the researchers to conduct Customer Preference Analysis.
 
-Objective: This study aims to explore the ever-changing market of fashion retail while focusing specifically on factors influencing customer preferences for online e-commerce fashion platforms and how this analysis can be useful in developing business strategies. 
+>Research Objective
+>This study aims to explore the ever-changing market of fashion retail while focusing specifically on factors influencing customer preferences for online e-commerce fashion platforms and how this analysis can be useful in developing business strategies.
 
 ::: {.callout-note title="Research Objective"}
 
 This study aims to explore the ever-changing market of fashion retail while focusing specifically on factors influencing customer preferences for online e-commerce fashion platforms and how this analysis can be useful in developing business strategies.
 :::
 
-> **Research Objective:**
-> This study aims to explore the ever-changing market of fashion retail while focusing specifically on factors influencing customer preferences for online e-commerce fashion platforms and how this analysis can be useful in developing business strategies
-
+\newpage
 # Data description
 
-The aim of study was to identify the customer preferences based on behaviorial and demographic traits such as age, gender, recency, prefered delivery method, and transaction amount.
+According to the aim of the study to identify customer preferences based on behavioral and demographic traits such as age, gender, recency, preferred delivery method, and transaction amount, the dataset must contain these features or variables. The dataset that this research is going to utilize is available on @kaggle_customer_shopping. This dataset contains data collected from several **E-commerce** and **Retail** platforms that depict US consumer trends. This dataset can be used in several analyses such as Customer segmentation, demographic analysis, and much more. Not only this due to the diversity of data, a variety of visualizations can be inherited from this dataset. The dataset also utilizes various GitHub repositories that collected data related to demographic data *(Age, Gender, Purchase Amount, and Season) *. The dataset contains a total of 3900 rows and 22 columns. The description of the Columns is listed in the below given table:
 
-| Feature Name                     | Description                                                            |
+
+: Table for Column Description
+
+| Feature Name                      | Description                                                            |
 |-----------------------------------|------------------------------------------------------------------------|
 | `Customer.ID`                     | Unique identifier for each customer.                                   |
+|-----------------------------------|------------------------------------------------------------------------|
 | `Age`                             | Age of the customer.                                                   |
+|-----------------------------------|------------------------------------------------------------------------|
 | `Gender`                          | Gender of the customer.                                                |
+|-----------------------------------|------------------------------------------------------------------------|
 | `Item.Purchased`                  | Item that was purchased by the customer.                               |
+|-----------------------------------|------------------------------------------------------------------------|
 | `Category`                        | Category of the purchased item.                                        |
+|-----------------------------------|------------------------------------------------------------------------|
 | `Purchase.Amount..USD.`           | Purchase amount in USD.                                                |
+|-----------------------------------|------------------------------------------------------------------------|
 | `Location`                        | Geographical location of the customer.                                 |
+|-----------------------------------|------------------------------------------------------------------------|
 | `Size`                            | Size of the purchased item.                                            |
+|-----------------------------------|------------------------------------------------------------------------|
 | `Color`                           | Color of the purchased item.                                           |
+|-----------------------------------|------------------------------------------------------------------------|
 | `Season`                          | Season during which the item was purchased.                            |
+|-----------------------------------|------------------------------------------------------------------------|
 | `Review.Rating`                   | Customer's rating for the item.                                        |
-| `Subscription.Status`             | Whether the customer has a subscription (e.g., 'Subscribed' or 'Not Subscribed'). |
+|-----------------------------------|------------------------------------------------------------------------|
+| `Subscription.Status`             | Whether the customer has a subscription.                               |
+|-----------------------------------|------------------------------------------------------------------------|
 | `Payment.Method`                  | Payment method used for the purchase.                                  |
-| `Shipping.Type`                   | Type of shipping used (e.g., standard, expedited).                     |
+<!-- |-----------------------------------|------------------------------------------------------------------------| -->
+| `Shipping.Type`                   | Type of shipping used for the purchase.                                |
+|-----------------------------------|------------------------------------------------------------------------|
 | `Discount.Applied`                | Whether a discount was applied during the purchase.                    |
+|-----------------------------------|------------------------------------------------------------------------|
 | `Promo.Code.Used`                 | Whether a promo code was used for the purchase.                        |
+|-----------------------------------|------------------------------------------------------------------------|
 | `Previous.Purchases`              | Number of previous purchases made by the customer.                     |
+|-----------------------------------|------------------------------------------------------------------------|
 | `Preferred.Payment.Method`        | Customer's preferred method of payment.                                |
+|-----------------------------------|------------------------------------------------------------------------|
 | `Frequency.of.Purchases`          | Frequency with which the customer makes purchases.                     |
-| `Age.bin`                         | Binned category for age (e.g., age group).                             |
 
+
+-	The categorical variables are Gender ( Male, Female),         Item.Purchased (Dress, Backpack,…), Category (Clothing, Footwear, Outerwear, Accessories), Location (New Jersey, Ohio,… ), Size (S, M, L, XL), Color (Yellow, White, …), Season (Winter, Spring, Summer, Fall), Payment.Method (Credit, Debit, Venmo, Bank Transfer, Cash, Paypal), Preferred.Payment.Method (Credit, Debit, Venmo, Bank Transfer, Cash, Paypal), Shipping.Type ( Express, Free shipping, Next Day Air, Standard, 2-Day Shipping, Store Pickup)
+  
+  -	Subscription.Status, Discount Applied, and Promo.Code.Used are binary categorical variable with Yes or No as possible values.
+  
+  -	Age, Purchase.Amount..USD., Review.Rating, Previous.Purchases, Frequency.of.Purchases are a continuous variable.
+
+As the requirement of the study, there are all the features such as Age, gender, Frequency of Purchase, Size of fashion product, Promo code utilized or not, Shipping type, and many more. Moreover, features such as Subscription, Category of product, and Payment method can be utilized for further identifying the unexplored relationship. These relationships can be used to highlight some new factors affecting customer preferences. Additionally, Business can utilize these findings to strategies their business plan for all-round development. This data set can be utilized for further segmentation based on Demographic and Behavioural traits. Demographic traits can be used to target customers based on age and gender such as separate deals for Men and Women or special deals to children based on analysis. Behavioral Traits are Purchase Amount, Frequency of Purchases, and Preferred Payment Methods which can utilized to create clusters for loyal customers and new customers and then give offers based on the behavioural traits. Not only this, based on the item purchased and category, a Market Basket Analysis can also be conducted to find the products that are sold together such as t-shirts and pants, or shoes and socks.
+
+# Methods
+
+<!-- The methods used by different researchers for their customer preference analysis are Thematic Analysis(@wibowo2024exploring), Triangulation(@wibowo2024exploring), Conjoint Analysis(@cleofasbrand, @suzianti2015customer), CRISP-DM(@sulianta2024revealing), K-Means Clustering(@sulianta2024revealing), and Elbow method(@sulianta2024revealing).  -->
+
+In this study, I am going to use CRISP-DM also known as *Cross-Industry Standard Process for Data Mining* which is a methodology used by @sulianta2024revealing in their study on *Revealing Consumer Preferences in the Fashion Industry Using K-Means Clustering*. This method includes following 4 steps:
+
+1. Data Collection: Here, in this study data is collected from retail and e-commerce platforms across the US, and several github repository which was then aggregated and made available by @kaggle_customer_shopping on *Kaggle*.
+
+2. Data Cleaning: In this step the dataset must be cleaned by removing NA values and making it ready for analysis by doing basic feature engineering.
+
+3. Data Analysis: In this step, the data that is preprocessed needs to be explored and analyzed for generating meaningful insights.
+
+4. Interpretation: The insights generated in previous step will be utilized and interpreted for understanding the trends and patterns to answer the question of research.
 
 ```{r}
 #| results: false
+#| echo: false
 #| warning: false
 
 library(dplyr)
@@ -101,107 +143,114 @@ library(maps)
 library(chisq.posthoc.test)
 ```
 
+## 1. Data Collection
 
-# Data Preprocessing
+The data is collected by @kaggle_customer_shopping which can be downloaded and loaded into Rstudio using following code. 
 
 ```{r}
+#| label: load-dataset
+#| echo: true
+
 df <- read.csv("shopping_trends.csv")
 df_2 <- df
+```
+The original dataframe is copied into another variable, `df_2`. This variable will be used in further analysis.
+
+## 2. Data Cleaning
+
+Firstly, the categorical features have to be converted into `factors` for analysis and better structuring of data. Therefore, looping through each column and comparing their class with `character` which then is converted into factor column can be done in following way. Moreover, the Size column has a natural order of S < M < L < XL, so Size feature can be factorized using `ordered = TRUE`.
+
+```{r}
+#| echo: true
+#| label: factor-columns
+#| results: "hide"
+#| output: false
+# Loop to convert character column in factor column
 for (i in names(df_2)){
   if(class(df_2[[i]]) == "character"){
     df_2[[i]] <- factor(df_2[[i]])
     
   }
 }
-str(df_2)
-class(df_2$Gender)
 
-names(df_2)
-
+# Factorizing Size column for ordering the levels
 df_2$Size <- factor(df_2$Size, levels=c("S","M","L","XL"), ordered = TRUE)
+
+str(df_2)
 ```
+
+Secondly, the dataset should be checked for any NA values. This can be done by finding the column sum from each variable after applying `is.na()`.
+
 ```{r}
+#| echo: true
+#| label: check-null-values
+#| results: "hide"
+#| output: false
 # Check null values
 colSums(is.na(df_2))
 ```
-There are no NA values in the dataset.
 
-# Data Exploration
-```{r}
-barplot(table(df[["Gender"]]))
-```
+The age is continuous variable, to check if age have any effect in customer preference it needs to be binned into two categories: `Under 25 ( Age <= 25 ), and Above 25 ( Age > 25 )` (@glinska2017customer).
 
 ```{r}
-# for (i in names(df_2)){
-#   print(i)
-#   if(class(df_2[[i]]) == "factor"){
-#     # ggplot(table(df_2),aes(x=i,)) +
-#     #   geom_bar() + 
-#     #   coord
-#     barplot(table(df[[i]]),xlab=i,main = paste("Distribution of ",i))
-#   }
-#   else{
-#     # qqnorm(df[[i]],xlab = i, main = paste("Distribution of",i))
-#     # qqline(df[[i]],col="red")
-#     hist(df[[i]],xlab = i, main = paste("Distribution of",i))
-#     
-#   }
-# }
-```
-
-## Demographic analysis
-
-### Age
-```{r}
+#| echo: true
+#| label: age-bin-factor
+#| results: "hide"
+#| output: false
 # Binning the age in to two categories
 df_2$Age.bin <- ifelse(df_2$Age <= 25,"Under 25","Above 25")
 
 # Factorizing the column
 df_2$Age.bin <- factor(df_2$Age.bin)
+
+str(df_2$Age.bin)
 ```
 
+## 3. Data Analysis
+
+First of all, the new binned age (`Age.bin`) needs to be analyzed with other features to find if there is a significant difference in the Age groups.
+
+Frequency of Purchase may vary for individuals under 25 and above 25. There may be a significance that Age has a relationship with Frequency of purchase. To visualize both the groups based on the count of different frequencies of purchase category a horizontal bar chart for each age group can be created.
+
+
 ```{r}
+#| echo: true
+#| results: "hide"
+#| output: false
 #| message: false 
 #| warning: false 
 #| label: fig-frequency-of-purchase-by-age-group
 #| fig-cap: "Plots showing the frequency purchase in different age group"
-#| fig-subcap: 
-#|   - "Frequency of purchase for Age <= 25"
-#|   - "Frequency of purchase for Age > 25" 
-#| layout-ncol: 2
-#| fig-align: center
 
+age_frequency <- data.frame(table(df_2$Age.bin, df_2$Frequency.of.Purchases)) 
+colnames(age_frequency) <- c("Age","Frequency.of.Purchase","Count")
 
-# 1. Age 
-
-# 1.1 Frequency of Purchase
-
-# Plot to display the count of Customer under 25 and their Frequency of Purchase
-data.frame(table(df_2[df_2$Age.bin == "Under 25", "Frequency.of.Purchases"])) %>%
-  mutate(name = fct_reorder(Var1, desc(Freq))) %>%
-  ggplot(aes(x = name, y = Freq)) + 
-  geom_bar(stat = "identity") + 
-  labs( x = "Frequency of Purchases", y = "Count",) +
-  coord_flip()
-
-# Plot to display the count of Customer above 25 and their Frequency of Purchase
-data.frame(table(df_2[df_2$Age.bin == "Above 25", "Frequency.of.Purchases"])) %>%
-  mutate(name = fct_reorder(Var1, desc(Freq))) %>%
-  ggplot(aes(x = name, y = Freq)) + 
-  geom_bar(stat = "identity") + 
-  labs(x = "Frequency of Purchases", y = "Count") +
-  coord_flip()
+age_frequency %>%
+  ggplot(aes(fill = Age, x = Frequency.of.Purchase, y = Count)) +
+  geom_bar(stat = "identity", position = "stack") + 
+  coord_flip() + 
+  labs(x = "Frequency of Purchase")
+  
+    
 ```
 
+A chi-squared test of independence is conducted to find if there is any significant effect of age on the frequency of purchase.
 
 ```{r}
+#| echo: true
+#| label: chisq-age-frequency-of-purchase
+#| results: "hide"
+#| output: false
 # Chi square test of independence
 chisq.test(table(df_2$Age.bin,df_2$Frequency.of.Purchases))
-# There are not much significance between relation of Age and Frequency of Purchase
 ```
 
-
+As mentioned by @glinska2017customer younger generation saw online shopping as part of loyalty programs. Promo codes are one of the aspects of loyalty programs where customer can get promo codes based on their frequency of purchase. Therefore, a relationship between age and promo code used can be analyzed using a heatmap with the count in each category and a chi-squared test to prove the effect.
 ```{r}
+#| echo: true
+#| label: age-promo-code
+#| results: "hide"
+#| output: false
 # 1.2 Promo codes
 age_promo_table <- data.frame(table(df_2$Age.bin,df_2$Promo.Code.Used)) 
 
@@ -210,225 +259,137 @@ colnames(age_promo_table) <- c("Age.bin", "Promo.Code.Used", "Count")
 age_promo_table %>%
   ggplot(aes(x = Age.bin, y = Promo.Code.Used, fill = Count)) +
     geom_tile() +
-    scale_fill_viridis(discrete = FALSE) +
     labs(title = "Heatmap for Age group and Promo code used",
          x = "Age group", y = " Promo Code Used", fill = "Count") +
     theme_minimal() + 
   geom_text(aes(label = Count), color = "white", size = 6)
-
-age_promo_code <- table(df_2$Age.bin, df_2$Promo.Code.Used)
-chisq.test(age_promo_code)
 ```
 
 
 ```{r}
+#| echo: true
+#| label: age-promo-chisq
+#| results: "hide"
+#| output: false
+age_promo_code <- table(df_2$Age.bin, df_2$Promo.Code.Used)
+chisq.test(age_promo_code)
+```
+
+Furthermore, @wibowo2024exploring concludes that customer reviews play a crucial role. So, to find which age group gives a higher rating a boxplot of the distribution of ratings and a t-test to confirm the effect of age and reviews rating needs to be computed.
+```{r}
+#| echo: true
+#| label: boxplot-age-reviews
+#| results: "hide"
+#| output: false
 # 1.3 Review Rating
 df_2 %>%
   ggplot(aes(x=Age.bin, y = Review.Rating, fill = Age.bin)) +
   geom_boxplot()
+```
 
+Before performing the t-test the assumptions need to be checked to verify if a parametric test can be conducted or not. After conducting a t-test and getting a significant p-value < 0.05, a Cohen's d test will be conducted to find the effect size of the relationship.
+```{r}
+#| echo: true
+#| label: group-by-agebin
+#| results: "hide"
+#| output: false
 # T test
 Age.grouping <- group_by(df_2,Age.bin)
+```
 
+
+```{r}
+#| echo: true
+#| label: outlier-detection
+#| results: "hide"
+#| output: false
 # Assumptions checking
 # Outlier checking
 identify_outliers(Age.grouping, Review.Rating)
+```
+
+```{r}
+#| echo: true
+#| label: normality-test
+#| results: "hide"
+#| output: false
 # Normality checking
-for (i in unique(df_2$Age.bin)){
-  # print(i)
-  qqnorm(df_2[df_2$Age.bin == i,"Review.Rating"])
-  qqline(df_2[df_2$Age.bin == i,"Review.Rating"],col = "red")
-  plot(density(df_2[df_2$Age.bin == i,"Review.Rating"]))
-  boxplot(df_2[df_2$Age.bin == i,"Review.Rating"])
-}
 shapiro_test(Age.grouping, Review.Rating)
+```
+
+```{r}
+#| echo: true
+#| label: levene-test
+#| results: "hide"
+#| output: false
 # Homogeniety of variance
 levene_test(df_2, Review.Rating ~ Age.bin)
+```
 
+```{r}
+#| echo: true
+#| label: t-test-age-rating
+#| results: "hide"
+#| output: false
 t_test(Review.Rating ~ Age.bin, data = df_2)
+```
+
+
+```{r}
+#| echo: true
+#| label: effect-test-age-rating
+#| results: "hide"
+#| output: false
 
 cohens_d(df_2,Review.Rating ~ Age.bin, var.equal = FALSE)
-# p-value < 0.05, there is an effect but small one
 ```
-```{r}
-# 1.4 Category
-
-age_category_table <- data.frame(table(df_2$Age.bin,df_2$Category)) 
-colnames(age_category_table) <- c("Age.bin", "Category", "Count")
-
-age_category_table %>%
-  ggplot(aes(x = Age.bin, y = Category, fill = Count)) +
-    geom_tile() +
-    scale_fill_viridis(discrete = FALSE) +
-    labs(title = "Heatmap for Age group and Promo code used",
-         x = "Age group", y = " Promo Code Used", fill = "Count") +
-    theme_minimal() + 
-  geom_text(aes(label = Count), color = "white", size = 6)
-
-age_promo_code <- table(df_2$Age.bin, df_2$Promo.Code.Used)
-chisq.test(age_promo_code)
-```
-```{r}
-# Preferred Purchase Method
-age_preferred_purhcase_method_table <- data.frame(table(df_2$Age.bin,df_2$Preferred.Payment.Method)) 
-colnames(age_preferred_purhcase_method_table) <- c("Age.bin", "Preferred.Payment.Method", "Count")
-
-age_preferred_purhcase_method_table %>%
-  ggplot(aes(x = Age.bin, y = Preferred.Payment.Method, fill = Count)) +
-    geom_tile() +
-    scale_fill_viridis(discrete = FALSE) +
-    labs(title = "Heatmap for Age group and Preferred Purchase Method",
-         x = "Age group", y = " Preferred Purchase Method", fill = "Count") +
-    theme_minimal() + 
-  geom_text(aes(label = Count), color = "white", size = 6)
-
-age_preferred_payment_method_code <- table(df_2$Age.bin, df_2$Preferred.Payment.Method)
-chisq.test(age_preferred_payment_method_code)
-```
+The promo codes are very crucial during online purchases therefore, gender may have an influence on promo code usage. This can be conducted using a chi-squared test and post-hoc test to find which gender uses promo-code most.
 
 ```{r}
-# 1.6 Shipping Type by Age
-age_shipping <- data.frame(table(df_2$Age.bin, df_2$Shipping.Type)) 
-colnames(age_shipping) <- c("Age", "Shipping_Type", "Count")
+#| echo: true
+#| label: heat-map-gender-promo-code
+#| results: "hide"
+#| output: false
 
-# Bar plot for Age vs Shipping Type
-age_shipping %>%
-  ggplot(aes(fill = Age, y = Count, x = Shipping_Type)) + 
-  geom_bar(position = "dodge", stat = "identity") +
-  labs(title = "Shipping Type by Age", x = "Shipping Type", y = "Count")
-
-# Chi-square test for Age and Shipping Type relationship
-shipping_table_age <- table(df_2$Age, df_2$Shipping.Type)
-chisq.test(shipping_table_age)
-
-# No significance
-```
-### Gender
-```{r}
-#| message: false 
-#| warning: false 
-#| label: fig-frequency-of-purchase-by-gender-group
-#| fig-cap: "Plots showing the frequency purchase by gender group"
-#| fig-subcap: 
-#|   - "Frequency of purchase for Male customers"
-#|   - "Frequency of purchase for Female customers" 
-#| layout-ncol: 2
-#| fig-align: center
-
-# 2.1 Frequency of Purchase
-
-# Plot to display the count of Male customers and their Frequency of Purchase
-data.frame(table(df_2[df_2$Gender == "Male", "Frequency.of.Purchases"])) %>%
-  mutate(name = fct_reorder(Var1, desc(Freq))) %>%
-  ggplot(aes(x = name, y = Freq)) + 
-  geom_bar(stat = "identity") + 
-  labs(x = "Frequency of Purchases", y = "Count") +
-  coord_flip()
-
-# Plot to display the count of Female customers and their Frequency of Purchase
-data.frame(table(df_2[df_2$Gender == "Female", "Frequency.of.Purchases"])) %>%
-  mutate(name = fct_reorder(Var1, desc(Freq))) %>%
-  ggplot(aes(x = name, y = Freq)) + 
-  geom_bar(stat = "identity") + 
-  labs(x = "Frequency of Purchases", y = "Count") +
-  coord_flip()
-
-
-```
-
-
-```{r}
-# Chi square test of independence
-chisq.test(table(df_2$Gender, df_2$Frequency.of.Purchases))
-```
-
-
-```{r}
-```
-
-```{r}
-# 2.2 Promo Codes
+# Dataframe containing Contingency table for gender vs promo-code use
 gender_promo_table <- data.frame(table(df_2$Gender, df_2$Promo.Code.Used)) 
 
+# renaming column names of the gender_promo_table dataframe
 colnames(gender_promo_table) <- c("Gender", "Promo.Code.Used", "Count")
 
+# Heat map to visualize the contingency table
 gender_promo_table %>%
   ggplot(aes(x = Gender, y = Promo.Code.Used, fill = Count)) +
     geom_tile() +
-    scale_fill_viridis(discrete = FALSE) +
     labs(title = "Heatmap for Gender and Promo Code Used",
          x = "Gender", y = "Promo Code Used", fill = "Count") +
     theme_minimal() + 
     geom_text(aes(label = Count), color = "white", size = 6)
+```
 
+```{r}
+#| echo: true
+#| label: chisq-gender-promo-code
+#| results: "hide"
+#| output: false
+# Continegency table
 gender_promo_code <- table(df_2$Gender, df_2$Promo.Code.Used)
+
+# Chi-square test
 chisq.test(gender_promo_code)
-chisq.posthoc.test::chisq.posthoc.test(gender_promo_code)
 
-# gender have influence on promo code with Male being
-```
-```{r}
-# 2.3 Review Rating
-df_2 %>%
-  ggplot(aes(x = Gender, y = Review.Rating, fill = Gender)) +
-  geom_boxplot()
-
-# T test
-Gender.grouping <- group_by(df_2, Gender)
-
-# Assumptions checking
-# Outlier checking
-identify_outliers(Gender.grouping, Review.Rating)
-# Normality checking
-shapiro_test(Gender.grouping, Review.Rating)
-# Homogeneity of variance
-levene_test(df_2, Review.Rating ~ Gender)
-
-t_test(Review.Rating ~ Gender, data = df_2)
-
-cohens_d(df_2, Review.Rating ~ Gender, var.equal = FALSE)
-# p-value < 0.05, indicating there is an effect
-
-# No effect of Gender on reviews
-```
-```{r}
-# 2.4 Category
-gender_category_table <- data.frame(table(df_2$Gender, df_2$Category)) 
-colnames(gender_category_table) <- c("Gender", "Category", "Count")
-
-gender_category_table %>%
-  ggplot(aes(x = Gender, y = Category, fill = Count)) +
-    geom_tile() +
-    scale_fill_viridis(discrete = FALSE) +
-    labs(title = "Heatmap for Gender and Category",
-         x = "Gender", y = "Category", fill = "Count") +
-    theme_minimal() + 
-    geom_text(aes(label = Count), color = "white", size = 6)
-
-gender_category_code <- table(df_2$Gender, df_2$Category)
-chisq.test(gender_category_code)
-
-```
-```{r}
-# 2.5 Preferred Purchase Method
-gender_preferred_purchase_method_table <- data.frame(table(df_2$Gender, df_2$Preferred.Payment.Method)) 
-colnames(gender_preferred_purchase_method_table) <- c("Gender", "Preferred.Payment.Method", "Count")
-
-gender_preferred_purchase_method_table %>%
-  ggplot(aes(x = Gender, y = Preferred.Payment.Method, fill = Count)) +
-    geom_tile() +
-    # scale_fill_viridis(discrete = FALSE) +
-    labs(title = "Heatmap for Gender and Preferred Purchase Method",
-         x = "Gender", y = "Preferred Purchase Method", fill = "Count") +
-    theme_minimal() + 
-    geom_text(aes(label = Count), color = "white", size = 6)
-
-gender_preferred_payment_method_code <- table(df_2$Gender, df_2$Preferred.Payment.Method)
-chisq.test(gender_preferred_payment_method_code)
-
+# Post-hoc test
+chisq.posthoc.test(gender_promo_code)
 ```
 
+
+@wibowo2024exploring also highlighted that offers like free shipping affects customer preference. Therefore, this difference can be visualized using a horizontal grouped bar chart. In addition, a chi-square test can be performed to identify if there is any significance in relationship between gender and shipping type. Also, a post-hoc test will be performed to find which shipping method is prefered by each gender.
+
 ```{r}
+#| echo: true
+#| label: barplot-gender-shipping
+#| results: "hide"
+#| output: false
 # 2.6 Shipping Type
 gender_shipping <- data.frame(table(df_2$Gender, df_2$Shipping.Type)) 
 colnames(gender_shipping) <- c("Gender","Shipping_Type","Count")
@@ -438,46 +399,140 @@ gender_shipping %>%
   geom_bar(position = "dodge", stat = "identity") +
   coord_flip()
 
+```
+```{r}
+#| echo: true
+#| label: chisq-gender-shipping
+#| results: "hide"
+#| output: false
+
 shipping_table <- table(df_2$Gender,df_2$Shipping.Type)
 chisq.test(shipping_table)
+```
+
+
+```{r}
+#| echo: true
+#| label: chisq-post-gender-shipping
+#| results: "hide"
+#| output: false
+
+# Posthoc test for shipping vs gender
 chisq.posthoc.test(shipping_table)
-
-# Free shipping is preferred by Females more than males
 ```
+
+# Results
 
 ```{r}
-# Create a contingency table for Item Purchased and Category
-item_category_table <- table(df_2$Item.Purchased, df_2$Category)
-
-# Perform Chi-squared test
-item_category_test <- chisq.test(item_category_table)
-
-# Display Chi-squared test results
-print(item_category_test)
-
-View(chisq.posthoc.test(item_category_table))
+#| echo: false
+#| ref.label: fig-frequency-of-purchase-by-age-group
+#| fig-cap: "Plots showing the frequency purchase in different age group"
 ```
+
+The plot shows that the proportions of people Above 25 is quite higher than Under 25. Moreover, both groups have high preference for the purchasing every 3 months. Additionally, People both under and above 25 have higher frequency of purchase annually. Whereas, rest of the Frequency of purchase categories also have some proportion of customers. From the plot it can be said that there are not much of a difference in frequency of purchase within groups.
+
 ```{r}
-# Frequency plot for size preference
-size_count <- table(df_2$Size)
-
-size_df <- size_count %>% data.frame() 
-colnames(size_df) <- c("size","count")
-
-size_df %>%
-  ggplot(aes(x = size, y = count, fill = size)) +
-  geom_bar(stat = "identity") 
-
-expected_distribution <- c(0.25,0.25,0.25,0.25)
-
-# Perform Chi-Square Goodness of Fit Test
-chisq.test(size_count, p = expected_distribution)
-
-# size_radar <- rbind(rep(2000,4),rep(0,4),data.frame(table(df_2$Size))$Freq)
-# colnames(size_radar) <- c("S","M","L","XL")
-# size_radar <- data.frame(size_radar)
-# radarchart(size_radar)
+#| echo: false
+#| ref.label: chisq-age-frequency-of-purchase
 ```
+
+The Chi-square test of Independence were not significant, $X^{2}(6, 3900) = 4.8901, p > 0.05$, this suggests that the Frequency of Purchase and Age groups are independent of each other and there is not enough evidence to conclude that there is any relation between two variables.
+
+```{r}
+#| echo: false
+#| ref.label: age-promo-code
+#| fig-cap: Heatmap showing contingency table of Promo code used vs Age Group
+```
+
+The heatmap shows the contingency table between Age group and Promo Code Used or not. Although there are less individual under 25 than above 25. In addition, both the groups have higher number of individuals **not using promo code** than those using promo code.
+```{r}
+#| echo: false
+#| ref.label: age-promo-chisq
+```
+
+The pearson's chi-squared test shows that there is **no relationship** between age groups and promo code use.
+
+```{r}
+#| echo: false
+#| ref.label: boxplot-age-reviews
+#| fig-cap: Boxplot showing distributions of Review ratings in different Age Groups
+```
+
+The boxplots depicts that overall both the groups rate `between 2.5 and 5`. However, shoppers that are Above 25 having median rating below 3.75 while Under 25 usually rate higher with median rating above 3.75. This hypothesis can be checked using a t-test of independence.
+
+Before conducting the test, assumption of t test needs to be checked
+
+i. **Extreme Outliers**:
+Here, the continuous variable is checked to identify if there are any extreme outliers in the dataset.
+```{r}
+#| echo: false
+#| ref.label: outlier-detection
+```
+
+The output shows 0 rows which means there are no outliers or extreme outliers in the Review rating variable.
+
+**ii. Normality Test**: In this test the Shapiro-Wilks test is conducted to check if there is normality in the distribution between groups. Here if p-value is > than 0.05 than the data is normally distributed.
+
+```{r}
+#| echo: false
+#| ref.label: normality-test
+```
+
+Unfortunately, the Shapiro-Wilks test failed to prove normality as p-values are less than the significance level (0.05). A non-parametric needs to be conducted.
+
+**iii. Homogeneity Test**: In this assumption test, with the help of the Levene's test, variance of different groups are checked if they are homogeneous or heterogeneous.
+```{r}
+#| echo: false
+#| ref.label: levene-test
+```
+
+Levene's test proved the homogeneity in the variance of the two groups as p-value(0.283) > 0.05.
+
+```{r}
+#| echo: false
+#| ref.label: t-test-age-rating
+```
+
+The results of the t-test suggest there is some relationship between Review rating and Age groups, t(773) = -2.37, p < 0.05.
+```{r}
+#| echo: false
+#| ref.label: effect-test-age-rating
+```
+As per Cohen's D test, the relationship has a negligible effect between Age and Review rating.
+
+```{r}
+#| echo: false
+#| ref.label: heat-map-gender-promo-code
+#| fig-cap: Heatmap showing the contingency table between Gender and Promo Code Use
+```
+It is clear from the heat map that Females do not like to use Promo codes whereas, on the other hand, Men highly use Promo codes.
+```{r}
+#| echo: false
+#| ref.label: chisq-gender-promo-code
+```
+
+The results of the chi-square confirm that the p-value for Promo-code use as `Yes` is less than 0.05 with residuals negative and males having residuals having residuals in positive.
+```{r}
+#| echo: false
+#| ref.label: barplot-gender-shipping
+#| fig-cap: Horizontal barchart showing 
+```
+The horizontally grouped bar chart depicts that Males have a higher preference for Store Pickup, Next Day Air, and Express. Whereas Females prefer Free Shipping highly.
+```{r}
+#| echo: false
+#| ref.label: chisq-gender-shipping
+```
+After conducting the chi-square test of independence between Gender and Shipping type, it shows there is significance, $X^{2}(5,3900) = 12.243, p < 0.05$.
+```{r}
+#| echo: false
+#| ref.label: chisq-post-gender-shipping
+```
+From the post-hoc test, it is clear that only free shipping has a p-value less than 0.05. Based on residuals Females have a higher preference for free shipping than Males. Lastly, other types of shipping methods do not have much significance with gender.
+
+
+
+
+
 
 
 \newpage
